@@ -12,13 +12,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var commmisionPayTextField: UITextField!
     @IBOutlet weak var totalPayLabel: UILabel!
     
+    let basePay = 500
+    
     override func viewDidLoad() {
         super.viewDidLoad()
        
     }
-
     @IBAction func calculateOnTapped(_ sender: UIButton) {
     }
     
+    func getInput() -> Double
+{
+    return 13.97
 }
 
+}
