@@ -55,6 +55,9 @@
                                         <state key="normal" title="Calculate">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="calculateOnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QL4-5j-Hqu"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -66,6 +69,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="commmisionPayTextField" destination="qcy-mh-B2T" id="GOf-If-eB0"/>
+                        <outlet property="totalPayLabel" destination="bCB-Xd-hB7" id="3Fb-V1-WrM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
