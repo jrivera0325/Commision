@@ -12,18 +12,26 @@ class ViewController: UIViewController {
     @IBOutlet weak var commmisionPayTextField: UITextField!
     @IBOutlet weak var totalPayLabel: UILabel!
     
-    let basePay = 500
+    let basePay:Int = 500
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        
     }
     @IBAction func calculateOnTapped(_ sender: UIButton) {
+        getInput()
     }
     
     func getInput() -> Double
-{
-    return 13.97
+    {
+        if let commisionPay = commmisionPayTextField.text, let pay = Double(commisionPay){
+            
+            print("Has Data and can be turned into a integer")
+        }else{
+            print("No Data or cant be turned into a integer")
+        }
+        return 13.97
+    }
+    
 }
 
-}
